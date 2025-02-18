@@ -49,6 +49,7 @@ body{
     background-color: #F3E5D8;
     overflow-x: hidden;
     font-size: 16px;
+    height: 150vh;
 }
 main{
     width: 100vw;
