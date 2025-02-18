@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+h2{
+    color: var(--stone-900);
+    font-family: "Young Serif", serif;
+    margin-bottom: .5rem;
+    margin: 1.5rem 0;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+h3{
+    color: var(--brown-800);
+    font-family: "Young Serif", serif;
+    margin-bottom: .5rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+p, li{ 
+    color: var(--stone-600);
+    margin: .5rem 0;
+    list-style-position: inside;
+}
+span{
+    color: var(--stone-600);
+    font-weight: 700;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+:root{
+--white: hsl(0, 0%, 100%);
+--stone-100: hsl(30, 54%, 90%);
+--stone-150: hsl(30, 18%, 87%);
+--stone-600: hsl(30, 10%, 34%);
+--stone-900: hsl(24, 5%, 18%);
+--brown-800: hsl(14, 45%, 36%);
+--rose-800: hsl(332, 51%, 32%);
+--rose-50: hsl(330, 100%, 98%);
+
+}
+body{
+    font-family: "Outfit", serif;
+    background-color: #F3E5D8;
+    overflow-x: hidden;
+    font-size: 16px;
+}
+main{
+    width: 100vw;
+    height: 100vh;
+}
+article{
+    width: 50%;
+    margin: auto;
+    background-color: var(--white);
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+article img{
+    border-radius: 10px;
+}
+.prearation{
+    background-color: var(--rose-50);
+    padding: 2rem;
+    border-radius: 10px;
+    
+}
+.prearation h3{
+    font-family: "Outfit", serif;
+    color: var(--rose-800);
+    font-size: 1.2rem;
+}
+.instructions ol li{
+    margin-right: 2re;
+}
+.instructions ol li::marker{
+    color: var(--rose-800);
+    font-size: 1rem;
+    
+}
+.nutrition  table{
+    width: 100%;
+    text-align: left;
+    margin-top: 1rem;
+}
+.nutrition  table tbody{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nutrition table  tr{
+    padding: .5rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px var(--stone-150);
+}
+.nutrition table  tr th{
+    text-align: left;
+    width: 50%;
+}
+
+.nutrition table tr th:first-child{
+    font-weight: 500;
+    color: var(--stone-600);
+}
+.nutrition table tr th:last-child{
+    font-weight: 700;
+    color: var(--brown-800);
+}
+
+@media (max-width: 800px){
+    article{
+        width: 90%;
+    }
+}
+@media (max-width: 600px){
+    article{
+        width: 100%;
+        margin-top: 0;
+    }
+}
